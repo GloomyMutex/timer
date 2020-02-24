@@ -1,0 +1,21 @@
+Math of Timer Project
+#####################
+Formula
+ * Perimeter = 2 * PI * r
+ * Perimeter = 2 * PI * 90
+ * offset = (perimeter * timeRemaining) / totalDuration - perimeter
+ 
+Start
+ * dasharray = perimeter
+ * dashoffset = 0
+ * offsetAtStart = p * 30 / 30 - p
+
+End
+ * dasharray = perimeter
+ * dashoffset = -1 * perimeter
+ * offsetAtEnd = p * 0 / 30 - p
+
+Example Calculations
+ * If perimeter of circle 100
+ * And there are 50 'tick' events
+ * Each tick needs to adjust the offset by -1 * 100/50 = -2

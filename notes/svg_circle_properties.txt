@@ -1,0 +1,19 @@
+Properties of SVG Circle
+########################
+* r: Radius
+* cx: The vertical access (going right)
+* cy: The horizontal access (going down)
+* fill: Content inside the circle (inside color - can also make transparent) 
+* stroke: The border around the outside of the circle (starts on right side and goes around clockwise)
+* stroke-width: Size of the border outside of the circle
+* stroke-dasharray: Can take two values separated by a space 
+    - one for dash size and the other for gap size around perimeter
+    - if only one value is used then that will be the size of both
+* stroke-dashoffset: Gives extra spacing ontop of the dasharray's gap 
+    - positive values for counter-clockwise
+    - negative values for clockwise
+* transform: has a rotate function that takes 3 values
+    - first value is the amount you want to rotate in degrees
+    - second two values are for the origin point of the transform
+    - normally transforms are done from the top left corner
+    - the values of 200 200 tell it to rotate around the center point of the circle (only for this size circle)
